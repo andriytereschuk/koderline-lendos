@@ -1,0 +1,66 @@
+/* 	&.anim {
+	ul {
+		@include anim(count,ease,1.2s);
+	}
+}
+
+@include keyframes('count') {
+from { @include translateY(0px);} 
+to { @include translateY(-203px);}
+  } */
+
+section {
+	position: relative;
+}
+
+#top {
+	height: 770px;
+	background: url('../images/top-bg.jpg') left top;
+}
+
+.icon-logo {
+	margin: 68px auto 0 auto;
+	display: block;
+	position: relative;
+
+	span {
+		background-color: #fff;
+		height: 28px;
+		line-height: 28px;
+		padding: 0 10px 0 30px;
+		font-size: 12px;
+		font-weight: 700;
+		position: absolute;
+		left: 134px;
+		top: -44px;
+		color: $grey;
+		white-space: nowrap;
+		display: none;
+
+
+		i {
+			display: block;
+			position: absolute;
+			top: 5px;
+			left: 10px;
+		}
+
+		&:before {
+			@include cont;
+			width: 0;
+			height: 0;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;		
+			border-top: 8px solid #fff;
+			position: absolute;
+			bottom: -8px;
+			left: 10px; 
+		}
+	}
+
+	&:hover {
+		span {
+			display: block;
+		}
+	}
+}
