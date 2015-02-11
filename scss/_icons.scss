@@ -35,3 +35,7 @@ $icon: sprite-map("icons/*.png", $spacing: 5px);
 	@include sprite($icon, icon-hand);
 }
 
+.icon-spec {
+	@include sprite($icon, icon-spec);
+}
+

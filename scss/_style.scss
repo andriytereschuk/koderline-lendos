@@ -9,6 +9,25 @@ from { @include translateY(0px);}
 to { @include translateY(-203px);}
   } */
 
+h2 {
+	color: $black;
+	font-weight: 300;
+	font-size: 34px;
+	line-height: 44px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 16px;
+	line-height: 24px;
+	color: $black;
+	font-weight: 700;  
+}
+
+h4 {
+	color: $green;
+}
+
 section {
 	position: relative;
 }
@@ -16,6 +35,21 @@ section {
 #top {
 	height: 770px;
 	background: url('../images/top-bg.jpg') left top;
+
+	h2 {
+		margin-top: 100px;
+		margin-bottom: 10px;
+	}
+
+	h3 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	p {
+		text-align: center;
+		margin-bottom: 30px;
+	}
 }
 
 .icon-logo {
@@ -63,4 +97,57 @@ section {
 			display: block;
 		}
 	}
+}
+
+.promo {
+	background-color: #fff;
+	width: 770px;
+	height: 130px;
+	margin: 0 0 0 200px;
+
+	.promo-inner {
+		width: 770px;
+		height: 130px;
+		display: table-cell;
+		vertical-align: middle;
+	}	
+}
+
+.icon-spec {
+	margin: 0 55px;
+}
+
+.promo-info {
+	display: inline-block;
+	position: relative;
+	top: -18px;
+}
+
+.promo-h {
+	color: #616263;
+	margin-bottom: 7px;
+}
+
+.promo-price {
+	font-size: 24px;
+	line-height: 28px;
+
+	span {
+		margin-right: 3px;
+	}
+}
+
+.p1 {
+	font-weight: 700;
+	color: #ff7a0e;
+}
+
+.p2 {
+	color: $black;
+	font-weight: 700;
+}
+
+.p3 {
+	color: $black;
+	font-weight: 300;
 }
