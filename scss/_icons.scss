@@ -39,3 +39,30 @@ $icon: sprite-map("icons/*.png", $spacing: 5px);
 	@include sprite($icon, icon-spec);
 }
 
+.icon-spec1 {
+	@include sprite($icon, icon-spec1);
+}
+
+.icon-spec2 {
+	@include sprite($icon, icon-spec2);
+}
+
+.icon-spec3 {
+	@include sprite($icon, icon-spec3);
+}
+
+.icon-phone {
+	@include sprite($icon, icon-phone);
+}
+
+.icon-email {
+	@include sprite($icon, icon-email);
+}
+
+.icon-phone2 {
+	@include sprite($icon, icon-phone2);
+}
+
+.icon-email2 {
+	@include sprite($icon, icon-email2);
+}
