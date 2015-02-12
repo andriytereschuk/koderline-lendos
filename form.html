@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- META TAGS -->
+  <!-- ========================================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1190">
+  <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" /> 
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- TITLE -->
+  <!-- ========================================================= -->  
+  <title>Koderline</title>
+
+  <!-- FAVICON -->
+  <!-- ========================================================= -->
+  <link rel="shortcut icon" href=""/>
+
+  <!-- CSS -->
+  <!-- ========================================================= -->  
+  <link rel="stylesheet" href="css/base.css">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- FONTS -->
+  <!-- ========================================================= -->  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,300,400' rel='stylesheet' type='text/css'>  
+
+  <script src="js/jquery.min.js"></script>
+</head>
+
+<body class="form">
+
+<section id="form">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <a href="http://www.koderline.ru/" class="icon-logo">
+          <span><i class="icon-hand"></i>Перейти на сайт компании</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="row form-info">
+      <div class="span12 span-form">
+        <h2>Подбор 1С программиста</h2>
+        <h3>Заполните форму ниже</h3>
+        <p>Укажите какого специалиста Вы ищете, и наш проект-менеджер предложит <br> вам ряд разработчиков, которые удовлетворяют Вашим параметрам.</p>
+        <h4>Мы гарантируем Вам нерозглашение персональной информации</h4>
+      </div>
+    </div>
+
+    <form action="">
+      <div class="row">
+        <div class="span3">
+          <input type="text" placeholder="Организация*">
+        </div>
+
+        <div class="span3">
+          <input type="text" placeholder="E-mail*">
+        </div> 
+
+        <div class="span3">
+          <input type="text" placeholder="Имя">
+        </div> 
+
+        <div class="span3">
+          <input type="text" placeholder="Телефон">
+        </div>  
+      </div>
+
+      <div class="row">
+        <div class="span6">
+          <input type="text" class="error" placeholder="Какие специалисты Вас интересуют?*" value="Какие специалисты Вас интересуют?*">
+        </div> 
+
+        <div class="span6">
+          <input type="text" placeholder="Сколько человек Вам нужно?">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span12">
+          <textarea placeholder="Какие работы планируете выполнить?"></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span12">
+          <a href="" class="btn" id="send">Отправить</a>
+          <div class="clr"></div>
+          <br><br>
+        </div>
+      </div>
+    </form>
+
+    <div class="row thanks">
+      <div class="span12">
+        <div class="thanks-h">Спасибо!</div>
+        <div class="thanks-h2">Ваша заявка успешно отправлена</div>
+        <p>Наш менеджер свяжется с Вами в ближайшее время </p>
+        <a href="index.html" class="btn">Вернуться на главную</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  $(function(){
+    $('#send').on('click', function(event){
+      event.preventDefault();
+      $('.form-info, form').fadeOut(200,function(){
+        $('.thanks').fadeIn(300);
+      });
+    });
+  });
+</script>
+</body>
+</html>
